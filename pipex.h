@@ -14,6 +14,8 @@
 # define PIPEX_H
 
 # include <stdlib.h>
+# include <stdio.h>
+# include <fcntl.h>
 # include <unistd.h>
 # include <limits.h>
 # include "library/printf/ft_printf.h"
@@ -41,6 +43,12 @@ t_stack		*ft_lstlast(t_stack *lst);
 t_stack		*ft_lstmap(t_stack *lst, void *(*f)(void *), void (*del)(void *));
 t_stack		*ft_lstnew(void *content);
 t_stack		*ft_lstnew_nbr(int content);
+
+/*Pipex*/
+
+void		pipex(int fd_in, int fd_out, char *cmd1, char *cmd2);
+void		child_one(int fd_in, char *cmd1);
+void		child_two(int fd_in, char *cmd1);
 
 
 #endif

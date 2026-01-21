@@ -1,28 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   process.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adakhama <adakhama@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/21 14:50:08 by adakhama          #+#    #+#             */
-/*   Updated: 2026/01/21 18:09:57 by adakhama         ###   ########.fr       */
+/*   Created: 2026/01/21 18:13:47 by adakhama          #+#    #+#             */
+/*   Updated: 2026/01/21 18:15:47 by adakhama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "pipex.h"
 
-int main(int argc, char**argv)
-{
-	int fd_in;
-	int fd_out;
-	
-	if (argc != 5)
-		return (-1);
-	fd_in = open(argv[2], O_RDONLY);
-	fd_out = open(argv[5], O_CREAT | O_RDWR | O_TRUNC, 0644);
-	if (fd_in < 0 || fd_out < 0)
-		return(-1);
-	pipex(fd_in, fd_out, argv[3], argv[4]);
-	return (0);
-}
+void	child_one(int fd_in, char *cmd1)
+{}
+
+void	child_two(int fd_in, char *cmd1)
+{}

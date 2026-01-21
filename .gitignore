@@ -3,3 +3,5 @@ read_error.txt
 *.o
 *.a
 pipex
+
+compile_commands.json
