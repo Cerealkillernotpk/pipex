@@ -18,6 +18,7 @@
 # include <fcntl.h>
 # include <unistd.h>
 # include <limits.h>
+# include <sys/wait.h>
 # include "library/printf/ft_printf.h"
 # include "library/libft/libft.h"
 # include "library/get_next_line/get_next_line_bonus.h"

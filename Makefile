@@ -6,7 +6,7 @@
 #    By: adakhama <adakhama@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/16 13:50:46 by adakhama          #+#    #+#              #
-#    Updated: 2026/01/13 17:53:50 by adakhama         ###   ########.fr        #
+#    Updated: 2026/01/21 18:39:26 by adakhama         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,6 +17,9 @@ CFLAGS = -Wall -Werror -Wextra -g
 NAME = pipex
 
 SRC =	Test/main_exemples.c \
+		main.c \
+		pipex.c \
+		process.c \
 		library/get_next_line/get_next_line_bonus.c \
 		library/get_next_line/get_next_line_utils_bonus.c \
 		library/struct/ft_listiter.c \

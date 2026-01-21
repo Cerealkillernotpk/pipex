@@ -6,14 +6,14 @@
 /*   By: adakhama <adakhama@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 18:13:47 by adakhama          #+#    #+#             */
-/*   Updated: 2026/01/21 18:15:47 by adakhama         ###   ########.fr       */
+/*   Updated: 2026/01/21 18:40:34 by adakhama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "pipex.h"
 
-void	child_one(int fd_in, char *cmd1)
-{}
+// void	child_one(int fd_in, char *cmd1)
+// {}
 
-void	child_two(int fd_in, char *cmd1)
-{}
+// void	child_two(int fd_in, char *cmd1)
+// {}
