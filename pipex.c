@@ -6,7 +6,7 @@
 /*   By: adakhama <adakhama@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 17:34:24 by adakhama          #+#    #+#             */
-/*   Updated: 2026/01/21 18:33:36 by adakhama         ###   ########.fr       */
+/*   Updated: 2026/01/23 17:20:21 by adakhama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,7 @@ void	pipex(int fd_in, int fd_out, char *cmd1, char *cmd2)
          return (perror("Fork: "));
     if (child2 == 0)
         child_two(fd_out, cmd2);
-    close(fd_pipe[0]);         // this is the parent
-    close(fd_pipe[1]);         // doing nothing
-    waitpid(child1, &status, 0);  // supervising the children
-    waitpid(child2, &status, 0);  // while they finish their tasks
+    close(fd_pipe[0]);
+    close(fd_pipe[1]);
+    waitpid(child1, &status, 0);
 }
